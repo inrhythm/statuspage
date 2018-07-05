@@ -1,0 +1,13 @@
+@import 'settings';
+//@import 'helpers/mixins';
+@import 'global';
+
+// Global Components
+@import 'components/header';
+
+body { overflow: hidden; }
+
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+}

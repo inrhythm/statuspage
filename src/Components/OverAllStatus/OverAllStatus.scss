@@ -1,0 +1,9 @@
+@import "../../styles/settings";
+
+.OverAllStatus{
+  &-p{
+    color:#fff;
+    background-color: $color-green;
+    text-align: center;
+  }
+}
