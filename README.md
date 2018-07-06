@@ -3,8 +3,8 @@ Application providing uptime information on a variety of IR's services and depen
 
 # Steps to run locally
 ```
-    git clone https://github.com/inrhythm/statuspage.git
-    cd statuspage
-    npm install
-    npm start
+    1) git clone https://github.com/inrhythm/statuspage.git
+    2) cd statuspage
+    3) npm install
+    4) npm start
 ```
