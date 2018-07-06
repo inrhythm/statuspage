@@ -3,7 +3,8 @@ import StatusImage from '../StatusImage/StatusImage';
 import './AllSystemStatus.scss';
 
 class AllSystemStatus extends Component {
-  render(){
+  render() {
+
     const SystemSatus = this.props.allSystemStatus.map((systemStatus, index) => {
       return <li key={index} className="AllSystemStatus-li">
         <span>
@@ -14,6 +15,7 @@ class AllSystemStatus extends Component {
         </span>
       </li>
     });
+
     return (
       <ul className="AllSystemStatus-ul">
         {SystemSatus}

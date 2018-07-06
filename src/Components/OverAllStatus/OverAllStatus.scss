@@ -1,9 +1,14 @@
 @import "../../styles/settings";
 
-.OverAllStatus{
-  &-p{
-    color:#fff;
-    background-color: $color-green;
+.OverAllStatus {
+  &-p {
+    color: #fff;
     text-align: center;
+  }
+  &-success {
+    background-color: $color-green;
+  }
+  &-error {
+    background-color: $color-red;
   }
 }

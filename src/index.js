@@ -4,5 +4,11 @@ import App from './App';
 import './styles/main.scss';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+const URLS = ['https://www.inrhythm.com/Give404', 'https://www.inrhythm.com/'];
+
+ReactDOM.render(
+  <App urls={URLS}/>,
+  document.getElementById('root')
+);
 registerServiceWorker();
