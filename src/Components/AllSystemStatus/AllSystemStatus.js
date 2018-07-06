@@ -1,4 +1,5 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
+import StatusImage from '../StatusImage/StatusImage';
 import './AllSystemStatus.scss';
 
 class AllSystemStatus extends Component {
@@ -8,8 +9,8 @@ class AllSystemStatus extends Component {
         <span>
           {systemStatus.url}
         </span>
-        <span>
-          {systemStatus.status}
+        <span className="AllSystemStatus-span-img">
+          <StatusImage statusCode={systemStatus.status}/>
         </span>
       </li>
     });

@@ -9,4 +9,13 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &-span-img{
+    width: 20px;
+    height: 20px;
+  }
+
+  &-img{
+    width: 100%;
+  }
 }

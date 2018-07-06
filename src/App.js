@@ -3,7 +3,7 @@ import Header from './Components/Header/Header';
 import OverAllStatus from './Components/OverAllStatus/OverAllStatus';
 import AllSystemStatus from './Components/AllSystemStatus/AllSystemStatus'
 
-const URLS = ['https://www.inrhythm.com/', 'https://www.inrhythm.com/'];
+const URLS = ['https://www.inrhythm.com/fghjlkds', 'https://www.inrhythm.com/'];
 
 class App extends Component {
   constructor(props){
