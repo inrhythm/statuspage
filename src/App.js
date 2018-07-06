@@ -22,7 +22,6 @@ class App extends Component {
         areAllSystemsOperational = false;
       }
     });
-    console.log(areAllSystemsOperational);
 
     return areAllSystemsOperational;
   }
