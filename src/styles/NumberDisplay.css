@@ -1,0 +1,40 @@
+.NumberDisplay .value {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.NumberDisplay .max {
+    display: block;
+    clear: left;
+    padding-top: 1rem;
+}
+
+.NumberDisplay .green {
+    height: 25px;
+    width: 25px;
+    background-color: #32CD32;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+   margin-right: 5px
+}
+
+.NumberDisplay .amber {
+    height: 25px;
+    width: 25px;
+    background-color: #FFBF00;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+   margin-right: 5px
+}
+
+.NumberDisplay .red {
+    height: 25px;
+    width: 25px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+   margin-right: 5px
+}

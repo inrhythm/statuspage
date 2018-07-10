@@ -1,0 +1,7 @@
+.NumberWidget .Progress {
+    padding-top: 1rem;
+}
+
+.NumberWidget .dot {
+    text-align: center;
+}
