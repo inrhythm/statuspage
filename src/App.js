@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Header from './Components/Header/Header';
 import OverAllStatus from './Components/OverAllStatus/OverAllStatus';
-import AllSystemStatus from './Components/AllSystemStatus/AllSystemStatus'
+import AllSystemStatus from './Components/AllSystemStatus/AllSystemStatus';
+import axios from 'axios';
 
 class App extends Component {
   constructor(props) {
@@ -9,10 +10,18 @@ class App extends Component {
     this.state = {}
   }
 
-  componentDidMount() {
-    Promise.all(this.props.urls.map(url => fetch(url)))
-      .then((resp) => this.setState({allSystemsList: resp}))
+  getErrorResp(e){
+    return e.response;
   }
+
+  getPromise(url){
+    return axios.get(url).catch(this.getErrorResp)
+  }
+
+  getData() {
+    Promise.all(this.props.urls.map(url => this.getPromise(url)))
+      .then((resp) => this.setState({allSystemsList: resp}))
+  };
 
   getOverAllStatus() {
     let areAllSystemsOperational = true;
@@ -24,6 +33,10 @@ class App extends Component {
     });
 
     return areAllSystemsOperational;
+  }
+
+  componentDidMount() {
+    this.getData();
   }
 
   render() {

@@ -3,12 +3,13 @@ import StatusImage from '../StatusImage/StatusImage';
 import './AllSystemStatus.scss';
 
 class AllSystemStatus extends Component {
+
   render() {
 
     const SystemSatus = this.props.allSystemStatus.map((systemStatus, index) => {
       return <li key={index} className="AllSystemStatus-li">
         <span>
-          {systemStatus.url}
+          {systemStatus.config.url}
         </span>
         <span className="AllSystemStatus-span-img">
           <StatusImage statusCode={systemStatus.status}/>
