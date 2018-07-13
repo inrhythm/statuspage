@@ -1,0 +1,13 @@
+$inrhythm-orange: $color-orange;
+
+.header {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  width: 100%;
+
+  &__logo {
+    color: $inrhythm-orange;
+    font-size: 22px;
+    text-align: center;
+  }
+}

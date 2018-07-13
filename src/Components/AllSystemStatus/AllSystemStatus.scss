@@ -1,0 +1,22 @@
+.AllSystemStatus{
+  &-ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  &-li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  &-span-img{
+    width: 20px;
+    height: 20px;
+  }
+
+  &-img{
+    width: 100%;
+  }
+}
